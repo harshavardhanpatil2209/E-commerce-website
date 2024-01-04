@@ -1,0 +1,12 @@
+[
+{"type":"header","version":"5.1.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"blockbuster"},
+{"type":"table","name":"users","database":"blockbuster","data":
+[
+{"id":"1","name":"University","email":"kanhalelor@gmail.com","password_hash":"$2y$10$n5mtWcADmqlNEDFj\/y8c3.LrPX0nxbrEjYjazwCCqhs1RIkYiDcfy"},
+{"id":"2","name":"Ben","email":"Barber@gmail.com","password_hash":"$2y$10$2Ej1HKOoFc.foxe0Bo\/JiObIb.jGF.XRZQCY5v7OeD8QmA1aWT7Pi"},
+{"id":"3","name":"Mary","email":"mary@yahoo.com","password_hash":"$2y$10$hmJ5G0tBlzjl8stJ3GYLwevSmdBrTYKhkmI6Uperza0EHX5y0rn\/C"},
+{"id":"4","name":"Michael","email":"mj@mjrecords.na","password_hash":"$2y$10$EIAXvjT0VWquP6vSntGp9eboIQCA.C\/dX6wV2QmX.Mf9ih9N9Iqg."}
+]
+}
+]

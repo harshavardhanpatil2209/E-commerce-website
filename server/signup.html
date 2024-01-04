@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockbuster 3.0</title>
+    <link rel="stylesheet" href="../client/src/assets/css/main.css">
+    <style>
+.logo-container {
+    width: 200px;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    margin-top: 0.5rem;
+}
+img {
+    object-fit: cover;
+    max-width: 150px;
+    border-radius: 60%;
+    outline: 1px solid #121212;
+}
+.call-to-action-link {
+    text-decoration: dotted;
+    font-size: x-large;
+    margin: 1rem 0;
+}
+a {
+    color: #f1f1f1;
+}
+a:hover {
+    color: tomato;
+}
+    </style>
+</head>
+<body>
+    <div class="sign-up-container">
+        <div class="logo-container">
+            <a href="../index.html"><img src="https://i.pinimg.com/originals/12/d6/00/12d60046505b41fe3ca8a71e0d186c62.png" alt="" class="logo"></a>
+        </div>
+        <h1 class="title">Signup and Start Shopping</h1>
+        <form action="signup.php" id="signup" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+            
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            
+                <label for="password_confirmation">Repeat password</label>
+                <input type="password" id="password_confirmation" name="password_confirmation">
+            
+            <button id="signup-btn">Sign up</button>
+        </form>
+        <p class="call-to-action-link">Already have an account? <a href="./login.php">Login</a></p>
+    </div>
+</body>
+</html>

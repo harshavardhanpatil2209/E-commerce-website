@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockbuster 3.0</title>
+</head>
+<style>
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("https://i.pinimg.com/originals/0b/7a/cd/0b7acde5398b034e73f953611e01880c.jpg") !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(9, 74, 154, 0.84);
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+.main-nav {
+    background: rgba(255, 253, 253, 0.664);
+    color: azure;
+    width: 100%;
+    height: calc(100vh - 80vh);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container {
+    width: 200px;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    padding: 0;
+}
+img {
+    max-width: 150px;
+    border-radius: 60%;
+}
+
+.menu li{
+    display: inline;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 3rem;
+}
+a {
+    text-decoration: none;
+    color: azure;
+    background: #4e4e4ee3;
+    padding: .5rem 0.4rem;
+    border-radius: 7px;
+}
+a:hover {
+    background-color: azure;
+    transition: 0.3s linear;
+    color: black;
+    border: 1px solid #121212;
+}
+.msg {
+    color: rgb(6, 6, 7);
+    font-size: 40px;
+}
+@media screen and (max-width: 680px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+    .main-nav {
+        background: transparent;
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+
+        height: fit-content;
+    }
+    .msg {
+        font-size: large;
+        margin: 1rem 0;
+        color: beige;
+    }
+    .menu {
+        margin: 2rem 0;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+</style>
+<body>
+    <nav class="main-nav">
+        <div class="logo-container">
+            <img src="https://i.pinimg.com/originals/12/d6/00/12d60046505b41fe3ca8a71e0d186c62.png" alt="" class="logo">
+        </div>
+        <h1 class="msg">START SHOPPING</h1>
+        <ul class="menu">
+            <li><a href="./server/signup.html"> Signup</a></li>
+            <li><a href="./server/login.php">Login</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
